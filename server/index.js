@@ -1,7 +1,17 @@
 import express from 'express';
 import bodyparser from 'body-parser';
 import cors from 'cors';
+import pg from 'pg';
 
+const db= new pg.Client({
+    user: "postgre",
+    host:"localhost",
+    database:"register",
+    password: "jokofi",
+    port: 5432,
+});
+
+db.connect();
 const app = express();
 const port = 3000;
 
