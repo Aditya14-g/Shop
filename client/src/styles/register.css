@@ -1,0 +1,53 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Register{
+    width: 50%;
+    height: 50%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius:10px;
+    overflow:hidden;
+}
+.register-form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+}
+.Register h2{
+    padding-top: 20px;
+    text-align:center;
+    background-color: white;
+    color: black;
+    width: 100%;
+    height:20%;
+    margin: 0;
+}
+.Register input{
+    border: none;
+    background-color: white;
+    color: black;
+    height: 40px;
+    width: 80%;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+.Register button{
+    background-color: white;
+    color: black;
+    height: 40px;
+    width: 50%;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 10px;
+}
