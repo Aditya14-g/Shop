@@ -6,6 +6,7 @@ import { RouterProvider } from 'react-router-dom';
 // import Login from './assets/login.jsx';
 import './styles/index.css';
 import route from './route.jsx';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
