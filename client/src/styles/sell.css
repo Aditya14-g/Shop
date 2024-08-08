@@ -1,0 +1,36 @@
+.sell-main-box{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.sell-form{
+    margin-top: 90px;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    width: 50%;
+    height: 100%;
+    border-radius: 30px;
+    font-size: 20px;
+}
+.sell-form input{
+    background-color: rgba(166, 166, 166, 0.725);
+    width: 70%;
+    height: 70px;
+    margin-bottom: 20px;
+    border-radius: 9px;
+    border: none;
+    padding-left: 20px;
+}
+.sell-form button{
+    width: 35%;
+    height: 75px;
+    border-radius: 9px;
+    background-color: rgb(255, 213, 0);
+    border: none;
+}

@@ -63,6 +63,15 @@ app.post('/login',async(req,res)=>{
         res.status(500).send('Error login');
      }
 })
+app.post('/sell',async(req,res)=>{
+    console.log(req.body);
+    try{
+        console.log("sell");
+        const result = await db.query("INSERT INTO products (product_name,image,price,location,quantity,description,user_id) VALUES ($1,$2,$3,$4,$5,$6,$7)",[req.body.product,req.body.image,req.body.price,req.body.address,req.body.quantity,req.body.des,1]);
+    }catch(err){
+        console.error("Error: ",err);
+    }
+})
 app.listen(port, () => {
     console.log(`Connected to port ${port}`);
 });
