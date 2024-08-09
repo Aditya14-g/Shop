@@ -62,6 +62,20 @@ app.post('/login',async(req,res)=>{
         console.error('Error logging in', err.stack);
         res.status(500).send('Error login');
      }
+});
+
+app.get('/home',async(req,res)=>{
+    try{
+        console.log("home");
+        const result=await db.query("SELECT * FROM products");
+        console.log(result.rows);
+        
+        // let val=await JSON.stringify(result);
+        // console.log([val]);
+        res.status(202).json(result.rows);
+    }catch(err){
+        console.error(err);
+    }
 })
 app.post('/sell',async(req,res)=>{
     console.log(req.body);
@@ -71,7 +85,7 @@ app.post('/sell',async(req,res)=>{
     }catch(err){
         console.error("Error: ",err);
     }
-})
+});
 app.listen(port, () => {
     console.log(`Connected to port ${port}`);
 });
